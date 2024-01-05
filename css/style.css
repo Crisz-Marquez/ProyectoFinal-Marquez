@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #090909;
+    background-color: #000000;
     height: 50vh;
     display: grid;
     place-items: center;
@@ -55,7 +55,7 @@ body {
 
 .section-background {
     font-family: 'Poppins', sans-serif;
-    background-color: #090909;
+    background-color: #000000;
     display: grid;
     place-items: center;
 }
@@ -182,14 +182,14 @@ a {
 }
 
 footer {
-    background-color: #090909;
+    background-color: #000000;
 }
 
 .footer {
     width: 100%;
     height: 30vh;
     padding-bottom: 50px;
-    background-color:  #090909;
+    background-color:  #000000;
     font-family: 'Satoshi variable', sans-serif;
     display: grid;
     place-items: center;
