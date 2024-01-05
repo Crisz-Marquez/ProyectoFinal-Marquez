@@ -1,0 +1,203 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form {
+    background-color: #282b32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.card {
+    width: 500px;
+    max-height: auto;
+    position: relative;
+}
+.card-inner{
+    width: inherit;
+    height: inherit;
+    background-color: 
+    rgba(255, 255, 255, .05);
+    box-shadow: 0 0 5px 
+    rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+}
+
+.tittle-card {
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 30px 0px 20px 0px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 0px 20px black;
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    background: 
+    radial-gradient(#0561EE,
+    #18E0B5);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(70, 70, 70);
+    position: absolute;
+    animation: move-up 3s ease-in 
+    infinite alternate-reverse;
+}
+.circle:nth-child(1){
+    top: -0px;
+    left: -70px;
+}
+.circle:nth-child(2){
+    bottom: -0px;
+    right: -70px;
+    animation-name: move-down;
+}
+
+@keyframes move-up{
+    to{
+        transform: translateY(-40px);
+    }
+}
+@keyframes move-down{
+    to{
+        transform: translateY(40px);
+    }
+}
+
+.input-group {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: grid;
+    place-content: center;
+    margin-top: 20px;
+}
+.input-group input {
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	font: inherit;
+    
+}
+.input-group input::placeholder {
+	transition: opacity 0.25s;
+}
+.input-group input:focus::placeholder {
+	opacity: 0;
+}
+.input-group label {
+    padding-right: 50px;
+	top: -30px;
+	left: -26px;
+	line-height: 16px;
+	color: #fff;
+	display: inline-flex;
+	column-gap: 10px;
+	transition: transform 0.25s, opacity 0.25s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.brand-options {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.whirlpool-radio {
+    display: flex;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.samsung-radio {
+    display: flex;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    max-height: 70px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #3aa13e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+    background-color: #2c8130;
+}
